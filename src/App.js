@@ -1,4 +1,6 @@
-import Img1 from './Images/yosemite-1.jpg'
+// import Img1 from './Images/yosemite-1.jpg'
+import Parks from './Pages/Parks'
+import Header from './Components/Header'
 
 
 import './App.css';
@@ -6,7 +8,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <img src={Img1} alt="yo" />
+      <Header />
+      <Parks />
+      {/* <img src={Img1} alt="yo" /> */}
     </div>
   );
 }

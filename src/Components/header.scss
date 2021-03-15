@@ -1,0 +1,25 @@
+header{
+    min-height: 7rem;
+    background: red;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        margin-left: 5rem;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+    }
+
+    ul{
+        margin-right: 5rem;
+        list-style: none;
+
+
+
+        li{
+            display: inline-block
+        }
+    }
+}
