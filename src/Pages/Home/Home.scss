@@ -1,0 +1,25 @@
+.home{
+    width: 100%;
+    text-align: center;
+
+    h1{
+        z-index: 5;
+        width: 100%;
+        color: #fff;
+       position: absolute;
+       top: 32%;
+       font-size: 5rem;
+       letter-spacing: .5px;
+    }
+    p{
+        z-index: 5;
+        position: absolute;
+        font-size: 3rem;
+        width: 100%;
+        top: 40%;
+        color: #FFF;
+
+
+    }
+    
+}

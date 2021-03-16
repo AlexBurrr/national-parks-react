@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import * as parkCodes from '../Data/ParkCodes'
+import * as parkCodes from '../../Data/ParkCodes'
 
 import axios from 'axios';
 
@@ -25,7 +25,7 @@ const Parks = () => {
 
     return (
         <div>
-
+            Parks
         </div>
     )
 }
