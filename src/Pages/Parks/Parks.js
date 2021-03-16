@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import * as parkCodes from '../../Data/ParkCodes'
+import Header from '../../Components/Header'
+
 
 import axios from 'axios';
 
@@ -25,6 +27,7 @@ const Parks = () => {
 
     return (
         <div>
+            <Header />
             Parks
         </div>
     )

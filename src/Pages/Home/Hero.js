@@ -16,7 +16,7 @@ const Hero = () => {
 
     return (
         <div className='hero-Container'>
-            <HeroCarousel interval={4500}>
+            <HeroCarousel interval={3500}>
                 <img
                     src={Yosemite}
                     width="100%"
