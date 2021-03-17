@@ -1,17 +1,58 @@
 .sectionContainer{
     width: 100%;
-    height: 70rem;
+    height: 85rem;
     background-color: #D1E1DB;
     position: relative;
 }
 
-.parkContainer{
+
+
+.grid-container {
     position: absolute;
-    background-color: #FFFFFF;
-    width: 70%;
-    height: 45rem;
+    width: 65%;
+    height: 60rem;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px 22px;
+  grid-template-areas:
+    "wild-life wild-life wild-life wild-life picture picture"
+    "wild-life wild-life wild-life wild-life picture picture"
+    "picture-2 picture-2 Hiking Hiking Hiking Hiking"
+    "picture-2 picture-2 Hiking Hiking Hiking Hiking";
+}
+
+.wild-life { grid-area: wild-life;
+    background-color: red;
     
+    
+    img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    
+    
+
+}
+
+.Hiking { grid-area: Hiking;
+    background-color: blue;
+    
+
+}
+
+.picture { grid-area: picture;
+    background-color: aqua;
+    
+
+}
+
+.picture-2 { grid-area: picture-2;
+    background-color: beige;
+    
+
 }
