@@ -5,6 +5,16 @@
     position: relative;
 }
 
+.rec{
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    
+}
 
 
 .grid-container {
@@ -25,34 +35,85 @@
     "picture-2 picture-2 Hiking Hiking Hiking Hiking";
 }
 
-.wild-life { grid-area: wild-life;
-    background-color: red;
-    
+.camping{ grid-area: wild-life;
+   
     
     img{
         width:100%;
         height:100%;
-        object-fit: cover;
+
+    }
+    .camping-span{
+        position: absolute;
+        font-size: 2rem;
+        left: 1%;
+        top: 45%;
+        color: #FFFFFF;
+        
+    }
+    
+    
+    
+
+}
+
+.biking { grid-area: Hiking;
+    background-color: black;
+    img{
+        width:100%;
+        height:100%;
+        opacity: .8;
+
+    }
+    .bike-span{
+        position: absolute;
+        font-size: 2rem;
+        left: 35%;
+        top: 95%;
+        color: #FFFFFF;
+        
+    }
+    
+
+}
+
+.picture { grid-area: picture;
+    background-color: black;
+    img{
+        width:100%;
+        height:100%;
+        opacity: .8;
+
+    }
+
+    .hrb{
+        position: absolute;
+        font-size: 2rem;
+        left: 69%;
+        top: 45%;
+        color: #FFFFFF;
+        
     }
     
     
 
 }
 
-.Hiking { grid-area: Hiking;
-    background-color: blue;
-    
+.climbing { grid-area: picture-2;
+    background-color: black;
+    img{
+        width:100%;
+        height:100%;
+        opacity: .8;
+    }
+    .climbing-span{
+        position: absolute;
+        font-size: 2rem;
+        left: 1%;
+        top: 95%;
+        color: #FFFFFF;
 
-}
-
-.picture { grid-area: picture;
-    background-color: aqua;
-    
-
-}
-
-.picture-2 { grid-area: picture-2;
-    background-color: beige;
+    }
     
 
 }
