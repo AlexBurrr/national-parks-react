@@ -4,10 +4,33 @@
    
     // width: 25rem;
     height: 20rem;
-    background-color: blue;
-    text-align: center;
+    background-color: #FFFFFF;
+    display: flex;
     top: 90rem;
     transition: .2s ease-in-out;
+    font-size: 1.3rem;
+    color: white;
+
+    span{
+
+        position: relative;
+        left: 0;
+        background-color: black;
+        opacity: .5;
+        height: 5rem;
+        width: 100%;
+        top: 75%;
+
+        p{
+        background-color: black;
+        opacity: .5;
+        width: 100%;
+       
+            
+        }
+        
+
+    }
 
     &:hover{
         transform: scale(1.03)

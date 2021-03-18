@@ -16,7 +16,7 @@ const Parks = () => {
     //     api_key: 'rSKRXSd5KcnyWwg0JkrzXQz4PJe5Uq9f6o0GNiYW'
     // }
 
-
+    const [search, setSearch] = useState('')
     const [parks, setParks] = useState('');
 
     useEffect(() => {
@@ -31,11 +31,13 @@ const Parks = () => {
 
 
 
-
     return (
         <div>
 
+
             <div className="bodyContainer">
+
+                <input type="text" className='search' placeholder='search park' onChange={e => setSearch(e.target.value)} />
                 <div className="card-container">
                     {parkCodes.parkInfo}
                 </div>

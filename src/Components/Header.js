@@ -12,7 +12,6 @@ const Header = () => {
                 <ul>
                     <li><Link style={{ color: '#fff', textDecoration: 'none', }} to='/Home'>Home</Link></li>
                     <li><Link style={{ color: '#fff', textDecoration: 'none' }} to='/Parks'>Parks</Link></li>
-                    <li><Link style={{ color: '#fff', textDecoration: 'none' }} to='/Donate'>Donate</Link></li>
                     <li><Link style={{ color: '#fff', textDecoration: 'none' }} to='/About'>About</Link></li>
                     <li className="close">X</li>
                 </ul>

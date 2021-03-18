@@ -205,11 +205,21 @@ export const parkCodes = [
 ]
 
 
+
+
+
 export let parkInfo = parkCodes.map((park, index) => {
     return (
 
-        <div className="card">
-            {park.PARKNAME}
+        <div className="card" key={index}>
+            <span>
+                <p>
+                    {park.PARKNAME}
+
+                </p>
+
+            </span>
+
         </div>
     )
 })
