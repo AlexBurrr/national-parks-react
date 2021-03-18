@@ -208,10 +208,10 @@ export const parkCodes = [
 
 
 
-export let parkInfo = parkCodes.map((park, index) => {
+export let parkCards = parkCodes.map((park, index) => {
     return (
 
-        <div className="card" key={index}>
+        <div className="card" key={index} >
             <span>
                 <p>
                     {park.PARKNAME}
