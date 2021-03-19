@@ -3,30 +3,30 @@ import React, { useEffect, useState } from 'react'
 import * as parkCodes from '../../Data/ParkCodes'
 import './Parks.scss'
 
-// import axios from 'axios';
+import axios from 'axios';
 
 const Parks = () => {
 
-    const [search, setSearch] = useState('')
+    let hi = document.getElementsByClassName('park-code')
 
 
 
-    // const url = 'https://developer.nps.gov/api/v1/parks?parkCode=yose&api_key=rSKRXSd5KcnyWwg0JkrzXQz4PJe5Uq9f6o0GNiYW';
+    const url = 'https://developer.nps.gov/api/v1/parks?parkCode=yose&api_key=rSKRXSd5KcnyWwg0JkrzXQz4PJe5Uq9f6o0GNiYW';
 
-    // // let params = {
-    // //     api_key: 'rSKRXSd5KcnyWwg0JkrzXQz4PJe5Uq9f6o0GNiYW'
-    // // }
+    // let params = {
+    //     api_key: 'rSKRXSd5KcnyWwg0JkrzXQz4PJe5Uq9f6o0GNiYW'
+    // }
 
-    // const [parks, setParks] = useState('');
+    const [parks, setParks] = useState('');
 
-    // useEffect(() => {
-    //     axios.get(url)
-    //         .then(res => {
-    //             setParks(res);
+    useEffect(() => {
+        axios.get(url)
+            .then(res => {
+                setParks(res);
 
-    //         })
-    // }, [])
-    // console.log(parks)
+            })
+    }, [])
+    console.log(parks)
 
 
 
@@ -36,10 +36,9 @@ const Parks = () => {
 
 
             <div className="bodyContainer">
-                {search}
                 {/* <input type="text" className='search' placeholder='search park' onChange={e => setSearch(e.target.value)} /> */}
                 <div className="card-container">
-
+                    {hi}
                     {parkCodes.parkCards}
 
 

@@ -209,14 +209,15 @@ export const parkCodes = [
 
 
 export let parkCards = parkCodes.map((park, index) => {
+
+    let code = park.ALPHACODE
     return (
 
         <div className="card" key={index} >
             <span>
-                <p>
-                    {park.PARKNAME}
 
-                </p>
+                <p>{park.PARKNAME}</p>
+                <p className='park-code'>{code}</p>
 
             </span>
 
